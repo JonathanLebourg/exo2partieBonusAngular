@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Exercice 2 - partie Bonus - Angular</title>
+</head>
+<body>
+  <div class="container present">
+    <h1>Exercice 2 de la partie Bonus d'Angular</h1>
+    <p>Faire un bouton qui affiche une alerte dès que l'on clique dessus.</p>
+  </div>
+
+  <div ng-app="MyApp" ng-controller="MyController" class="container">
+    <button type="button" name="button" ng-click="ShowAlert()">Vas-y ! Cliques si tu oses...</button>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+  <script type="text/javascript">
+  var app = angular.module('MyApp', [])
+ app.controller('MyController', function ($scope, $window) {
+     $scope.ShowAlert = function () {
+          $window.alert("Jouer à Save Duck sur https://jonathanlebourg.github.io/SaveDuck/");
+          return;}
+     });
+</script>
+</body>
+</html>

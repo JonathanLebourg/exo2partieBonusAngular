@@ -1,0 +1,29 @@
+body{
+  font-family: 'Sue Ellen Francisco', cursive;
+  background-color: #33202a;
+  font-size: 30px;
+}
+
+div{
+  display: block;
+  background-color: #5f5566;
+  text-align: center;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+.present{
+  color:white;
+}
+
+button
+{
+background-color:#336699;
+color: black;
+text-align: center;
+border: black solid 3px;
+border-radius:50px;
+height:70px;
+}
